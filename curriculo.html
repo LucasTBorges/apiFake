@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Currículo de [Seu Nome]</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <div id="preloader">
+            <img src="https://i.pinimg.com/originals/d9/f2/15/d9f21515b1e38d83e94fdbce88f623b6.gif" alt="Carregando...">
+        </div>
+
+        <header>
+            <div id="showHeader">
+                <h1 id="nome"> </h1>
+                <p id="email"> </p>
+                <p id="telefone"> </p>
+            </div>
+        </header>
+
+        <section>
+            <h2>Perfil Profissional</h2>
+            <p>Insira aqui um breve resumo sobre você e suas aspirações profissionais.</p>
+        </section>
+
+        <section>
+            <h2>Experiência Profissional</h2>
+            <span id="experiencia">
+            </span>
+        </section>
+
+        <section>
+            <h2>Educação</h2>
+            <span id="educacao">
+            </span>
+        </section>
+
+        <section>
+            <h2>Habilidades</h2>
+            <ul id="habilidades">
+            </ul>
+        </section>
+    </body>
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+    
+    
+    <script>
+    window.onload = function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id');
+
+        let curriculo = new Curriculo(id);
+        curriculo.builderRequest();
+        curriculo.getDados();
+        
+        setTimeout(function(){ 
+            $("#preloader").hide();
+            $("header").show();
+            $("section").show();
+        }, 300);
+ 
+    };
+</script>
+    <script src="curriculo.class.js"></script>
+</html>

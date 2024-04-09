@@ -15,6 +15,7 @@ header {
     color: #fff;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    display: none   ;
 }
 
 header h1 {
@@ -32,6 +33,7 @@ header p {
 section {
     padding: 20px;
     margin: 0 15%;
+    display: none   ;
 }
 
 /* Títulos das Seções */
@@ -71,3 +73,45 @@ a:hover {
         margin: 0 5%;
     }
 }
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+ /* Estilos CSS para centralizar o pré-carregador */
+ #preloader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+
+  #preloader img {
+    width: 100px;
+    height: 100px;
+    animation: rotate 2s linear infinite;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
