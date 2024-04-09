@@ -17,7 +17,7 @@ class Curriculo {
         })
     }
     getItemInteresse(interesse){
-        return`<li>${interesse.nome}</li>`
+        return`<li class="item-simples">${interesse.nome}</li>`
     }
 
     builderInteresses(interesses){
@@ -26,7 +26,7 @@ class Curriculo {
         })
     }
     getItemIdioma(idioma){
-        return `<li>${idioma.nome} (${idioma.nivel})</li>`;
+        return `<li><p class="item-simples">${idioma.nome} <small class="gray">(${idioma.nivel})</small></p<</li>`;
     }
 
     builderIdioma(idiomas){
@@ -37,9 +37,23 @@ class Curriculo {
     }
 
     getItemSocial(rede){
-        return `<li class="list-group-item">
-                    <img href= "${rede.url}" class="iconeRede border-right" alt="Ícone do ${rede.nome}" src="${rede.iconeUrl}"/>
-                    <a class="linkRedes" href="${rede.url}">${rede.nome} (${rede.url})</a>
+        var partes = rede.url.split("/");
+        console.log(partes);
+        var nome ="";
+        if (partes.length > 0){
+            nome = "/"+partes[partes.length - 1];
+        }
+        if (nome === "/"){
+            if(partes.length > 1){
+                nome = "/"+partes[partes.length - 2];
+            }
+            else{
+                nome = "Link";
+            }
+        }
+        return `<li>
+                    <img class="iconeRede fill-white" alt="Ícone de ${rede.nome}" src="${rede.iconeUrl}"/>
+                    <a class="linkRedes" href="${rede.url}">${nome}</a>
                 </li>`
     }
 
@@ -66,10 +80,10 @@ class Curriculo {
     }
 
     getItemEscolaridade( escolaItem ) {
-        return `<li class="list-group-item list-group-item-action flex-column align-items-start">
+    return `<li class="list-group-item list-group-item-action flex-column align-items-start border-0 elemento">
                     <div class="d-flex w-100 justify-content-between">
-                        <h3>${escolaItem.entidade}</h3>
-                        <p class="text-muted">${escolaItem.periodo} <p>
+                        <h5>${escolaItem.entidade}</h5>
+                        <p class="text-muted periodo">${escolaItem.periodo}<p>
                     </div>
                     <p><strong>Curso:</strong> ${escolaItem.curso}<p>       
                     <p><strong>Atividades:</strong> ${escolaItem.atividades}<p>
@@ -85,13 +99,14 @@ class Curriculo {
     }
 
     getItemExperiencia( experienciaItem ) {
-        return `<article>
-                        <h3>${experienciaItem.empresa}</h3>
-                        <p><strong>Cargo: </strong> ${experienciaItem.cargo}</p>
-                        <p><strong>Período: </strong> ${experienciaItem.periodo}</p>
-                        <p><strong>Responsabilidades: </strong> ${experienciaItem.atividades}<p>
-                    </article>`;
-
+        return `<article class="list-group-item list-group-item-action flex-column align-items-start border-0 elemento">
+                    <div class="d-flex w-100">
+                        <h5>${experienciaItem.empresa}</h5>
+                        <p class="text-muted periodo">${experienciaItem.periodo}<p>
+                    </div>
+                    <p><strong>Cargo:</strong> ${experienciaItem.cargo}<p>       
+                    <p><strong>Responsabilidades:</strong> ${experienciaItem.atividades}<p>
+                </article>`;
     }
 
     builderExperiencia( dadosExperiencia ) {
@@ -102,8 +117,13 @@ class Curriculo {
     }
 
     getItemHabilidade( item ) {
-        return "<li>"+item.titulo+"</li>";
-
+        const valor = item.pontuacao;
+        return `<li>
+                    <strong>${item.titulo}</strong>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: ${valor*10}%" aria-valuenow="${valor*10}" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </li>`
     }
 
     builderHabilidade( dadosHabilidade ) {
@@ -115,8 +135,8 @@ class Curriculo {
 
     builderDadosCurriculo( dados ) {
        $("#nome").text(dados.nome);
-       $("#telefone").text(`Telefone: ${dados.telefone}`);
-       var textEmail = `Email: <a href="mailto:${dados.email}">${dados.email}</a>`;
+       $("#telefone").html(`<i class="bi bi-telephone-fill"></i> ${dados.telefone}`);
+       var textEmail = `<i class="bi bi-envelope-fill"></i><a href="mailto:${dados.email}">${dados.email}</a>`;
        $("#email").html(textEmail);
     }
 

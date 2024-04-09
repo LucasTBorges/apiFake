@@ -31,9 +31,7 @@ header p {
 
 /* Seções */
 section {
-    padding: 20px;
-    margin: 0 15%;
-    display: none   ;
+    padding: 0 0 25px 0;
 }
 
 /* Títulos das Seções */
@@ -76,11 +74,22 @@ a:hover {
         margin: 0 5%;
     }
 }
-
-
+.gray{
+  color: #b6b6b6;
+}
+.item-simples{
+  margin: 0;
+}
+.lista-simples{
+  list-style-type: none;
+  margin-bottom: 0;
+}
 a:link {
     text-decoration: none;
     color: white;
+}
+.lateralTitulo{
+  margin-left: 20px;
 }
 
 a:visited {
@@ -110,26 +119,86 @@ a:active {
     height: 100px;
     animation: rotate 2s linear infinite;
   }
-
-  #foto {
+  body{
+    padding: 0;
     width: 100%;
   }
-  a:link{
-    color: black;
+  .site{
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+  #foto {
+    width: 70%;
+    border-radius: 50%;
+    margin-top: 15px;
+  }
+  #nome{
+    margin: 15px 30px 15px 30px; 
   }
   .ficha{
     margin: 0 !important;
     padding: 20px !important;
   }
   .iconeRede {
-    width: 50px;
+    width: 30px;
     padding-right: 10px;
   }
-  .linkRede{
-    color: black !important;
-    text-decoration: none !important;
+  .periodo{
+    margin-left: auto !important;
+    margin-right: 20px;
   }
+  .fill-white{
+    filter: brightness(0) invert(1);
+  }
+  .elemento{
+    padding: 10px 0 ! important;
+  }
+  .perfil{
+    background-color: #094074;
+    align-items: center;
+    flex-direction: column;
+  }
+  a:link:hover{
+    color: white;
+  }
+  a{
+    color: white !important;
+  }
+  .lateral{
+    background-color: #3C6997;
+    padding: 0 !important;
+    color: white;
+  }
+  .container{
+    padding: 0 !important;
 
+  }
+  li::marker{
+    color: #3C6997;
+  }
+  .principal{
+    margin-top: 40px;
+  }
+  .principal h4{
+    color: #094074;
+  }
+  .principal h5{
+    color: #3C6997;
+  }
+  .contato{
+    list-style-type: none;
+    margin: 15px 0 25px 0;
+  }
+  .blue-icon{
+    margin-right: 5px;
+    margin-top: 6px;
+    color: #094074 ! important;
+    fill: #094074 ! important;
+  }
+  i{
+    margin-right: 10px;
+  }
   @keyframes rotate {
     from {
       transform: rotate(0deg);

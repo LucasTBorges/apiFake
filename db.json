@@ -11,12 +11,12 @@
         {
           "nome": "Linkedin",
           "url": "https://www.linkedin.com/in/lucas-teixeira-borges/",
-          "iconeUrl": "https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
+          "iconeUrl": "https://www.svgrepo.com/show/521725/linkedin.svg"
         },
         {
           "nome": "Github",
           "url": "https://www.github.com/LucasTBorges",
-          "iconeUrl": "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+          "iconeUrl": "https://www.svgrepo.com/show/512317/github-142.svg"
         }
       ],
       "experiencia": [
