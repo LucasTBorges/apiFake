@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Currículo de [Seu Nome]</title>
+        <title>Currículo</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
     <body>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <img style="display:none" id="foto" src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-High-Quality-Image.png">
+                </div>
+                <div class="col">
+                    <div class="jumbotron ficha">
+                        <h1 class="display-4" id="nome"></h1>
+                        <p class="lead" id="bio"></p>
+                        <hr class="my-4">
+                        <p id="email"> </p>
+                        <p id="telefone"> </p>
+                        <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a> -->
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
         <div id="preloader">
             <img src="https://i.pinimg.com/originals/d9/f2/15/d9f21515b1e38d83e94fdbce88f623b6.gif" alt="Carregando...">
         </div>
 
-        <header>
+        <!-- <header>
             <div id="showHeader">
-                <h1 id="nome"> </h1>
-                <p id="email"> </p>
-                <p id="telefone"> </p>
             </div>
-        </header>
-
+        </header> -->
+        
         <section>
-            <h2>Perfil Profissional</h2>
-            <p>Insira aqui um breve resumo sobre você e suas aspirações profissionais.</p>
+            <h2>Redes Sociais</h2>
+            <ul class="list-group" id="redes">
+            </ul>
         </section>
 
         <section>
@@ -30,19 +47,35 @@
             <span id="experiencia">
             </span>
         </section>
-
+            
         <section>
             <h2>Educação</h2>
-            <span id="educacao">
-            </span>
+            <ul class="list-group" id="educacao">
+            </ul>
         </section>
-
         <section>
             <h2>Habilidades</h2>
             <ul id="habilidades">
             </ul>
         </section>
+        <section>
+            <h2>Idiomas</h2>
+            <ul id="idiomas">
+            </ul>
+        </section>
+        <section>
+            <h2>Projetos</h2>
+            <ul id="projetos"> 
+            </ul>
+        </section>
+        <section>
+            <h2>Interesses</h2>
+            <ul id="interesses">
+            </ul>
+        </section>
+
     </body>
+    
     <script
         src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
@@ -62,9 +95,13 @@
             $("#preloader").hide();
             $("header").show();
             $("section").show();
+            $("#foto").show();
         }, 300);
  
     };
 </script>
     <script src="curriculo.class.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </html>

@@ -67,12 +67,16 @@ a:hover {
     color: #777;
 }
 
+.linkRede:link{
+    color: black ! important;
+}
 /* Estilo Responsivo */
 @media (max-width: 768px) {
     section {
         margin: 0 5%;
     }
 }
+
 
 a:link {
     text-decoration: none;
@@ -107,6 +111,25 @@ a:active {
     animation: rotate 2s linear infinite;
   }
 
+  #foto {
+    width: 100%;
+  }
+  a:link{
+    color: black;
+  }
+  .ficha{
+    margin: 0 !important;
+    padding: 20px !important;
+  }
+  .iconeRede {
+    width: 50px;
+    padding-right: 10px;
+  }
+  .linkRede{
+    color: black !important;
+    text-decoration: none !important;
+  }
+
   @keyframes rotate {
     from {
       transform: rotate(0deg);
@@ -115,3 +138,4 @@ a:active {
       transform: rotate(360deg);
     }
   }
+
