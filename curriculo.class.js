@@ -117,13 +117,12 @@ class Curriculo {
     }
 
     getItemHabilidade( item ) {
-        const valor = item.pontuacao;
+        const valor = Math.min(item.pontuacao,10);
         return `<li>
-                    <strong>${item.titulo}</strong>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: ${valor*10}%" aria-valuenow="${valor*10}" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </li>`
+                <strong>${item.titulo}</strong>
+                <div class="progress" role="progressbar" aria-label="$${item.titulo} score" aria-valuenow="${valor*10}" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: ${valor*10}%"></div>
+                </div>`
     }
 
     builderHabilidade( dadosHabilidade ) {
