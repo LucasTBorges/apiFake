@@ -11,12 +11,12 @@
         {
           "nome": "Linkedin",
           "url": "https://www.linkedin.com/in/lucas-teixeira-borges/",
-          "iconeUrl": "https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
+          "iconeUrl": "https://www.svgrepo.com/show/521725/linkedin.svg"
         },
         {
           "nome": "Github",
           "url": "https://www.github.com/LucasTBorges",
-          "iconeUrl": "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+          "iconeUrl": "https://www.svgrepo.com/show/512317/github-142.svg"
         }
       ],
       "experiencia": [
@@ -127,13 +127,18 @@
       "nome": "Daniel Victor Lima Resende",
       "email": "dvictoresende@gmail.com",
       "telefone": "71 986158306",
-      "urlProfile": "",
+      "urlProfile": "https://avatars.githubusercontent.com/u/84295858?v=4",
       "bio": "Olá, Meu nome é Daniel e meu objetivo é ser programador Java Full Stack",
       "redeSocial": [
         {
           "nome": "github",
           "url": "http://www.github.com/DanielVict0r",
-          "iconeUrl": "http://www.github.com/github.ico"
+          "iconeUrl": "https://www.macobserver.com/wp-content/uploads/2019/05/workfeatured-GitHub-2.png"
+        },
+        {
+          "nome": "Linkedin",
+          "url": "https://br.linkedin.com/",
+          "iconeUrl": "https://th.bing.com/th/id/OIP.waOtRAV99hCXTCS_RvbK6QHaGp?rs=1&pid=ImgDetMain"
         }
       ],
       "experiencia": [
@@ -171,25 +176,26 @@
         },
         {
           "titulo": "html",
-          "id": "3",
+          "id": 3,
           "pontuacao": 7
         },
         {
           "titulo": "css",
-          "id": "4",
+          "id": 4,
           "pontuacao": 7
         },
         {
           "titulo": "javascript",
-          "id": "5",
+          "id": 5,
           "pontuacao": 6
         },
         {
           "titulo": "sql",
-          "id": "6",
+          "id": 6,
           "pontuacao": 7
         }
       ],
+
       "idiomas": [
         {
           "nome": "Inglês",
@@ -203,14 +209,18 @@
         },
         {
           "nome": "Portugês",
-          "id": "3",
+          "id": 3,
           "nivel": "nativo"
         }
+        
       ],
+
+
       "interesses": [
         {
           "nome": "video-game",
           "id": 1
+          
         },
         {
           "nome": "programar",
@@ -218,17 +228,21 @@
         },
         {
           "nome": "Comer guloseimas",
-          "id": "3"
+          "id": 3
         }
+        
       ],
+
       "projetos": [
         {
-          "descritivo": "Site Simples em HTML CSS e JavaScript"
+          "descritivo": "Site Simples em HTML CSS e JavaScript"   
         },
         {
           "descritivo": "CRUD em Spring BOOT"
         }
       ]
+
+
     },
     {
       "id": "thiagoazevedo",
@@ -330,213 +344,6 @@
         {
           "id": 1,
           "descritivo": "Uma aplicação web para apresentar nossas habilidades e conhecimentos, apresentar meios de contato, alem de apresentar um pouco da pessoa."
-        }
-      ]
-    }
-  ]
-}
-=======
-{
-  "curriculos": [
-    {
-      "id": "lucasborges",
-      "nome": "Lucas Teixeira Borges",
-      "email": "lucastborges@gmail.com",
-      "telefone": "71 99950-9021",
-      "bio": "Sou um estudante de Ciência da Computação, apaixonado por tecnologia desde que me entendo por gente. Estou sempre buscando aprimorar minhas habilidades e me desenvolver enquanto profissional e pessoa.",
-      "urlProfile": "https://avatars.githubusercontent.com/u/112137058?v=4",
-      "redeSocial": [
-        {
-          "nome": "Linkedin",
-          "url": "linkedin.com/in/lucas-teixeiraborges/",
-          "iconeUrl": "https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
-        },
-        {
-          "nome": "Github",
-          "url": "github.com/LucasTBorges",
-          "iconeUrl": "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
-        }
-      ],
-      "experiencia": [
-        {
-          "cargo": "Desenvolvedor e Gerente de Recrutamento",
-          "empresa": "InfoJr",
-          "periodo": "07/2023 - atualmente",
-          "atividades": "Depois do primeiro semestre de 2023 desenvolvendo aplicações web usando React como parte do processo seletivo, fui efetivado em julho e desde então sou desenvolvedor e membro da diretoria de Gestão de Pessoas e em 2024 me tornei gerente de recrutamento."
-        },
-        {
-          "cargo": "Estagiário",
-          "empresa": "Adn Tecnologia",
-          "periodo": "04/2024 - atualmente",
-          "atividades": "Atualmente participando do processo de capacitação do estágio, utilizando HTML, CSS e JavaScript."
-        }
-      ],
-      "escolaridade": [
-        {
-          "entidade": "UFBA - Universidade Federal da Bahia",
-          "curso": "Ciência da Computação",
-          "periodo": "2022.1 - 2026.1 (previsão de conclusão)",
-          "atividades": "Estudo de disciplinas teóricas (Linguagens Formais e Autômatos, Teoria da Computação, Teoria dos Grafos, etc...) e também práticas (Estrutura de Dados e Algoritmos, Programação Orientada a Objetos, Engenharia de Software, etc), para além de discplinas voltadas para matemática (Cálculo, Álgebra Linear, etc.)"
-        },
-        {
-          "entidade": "CCAA - Centro de Cultura Anglo-Americano",
-          "curso": "Inglês",
-          "periodo": "2010-2020",
-          "atividades": "Concluí o curso de inglês em 2019, e então realizei o curso de professores, que concluí em 2020."
-        }
-      ],
-      "habilidades": [
-        {
-          "titulo": "python",
-          "id": 1,
-          "pontuacao": 8
-        },
-        {
-          "titulo": "JavaScript",
-          "id": 2,
-          "pontuacao": 6
-        },
-        {
-          "titulo": "HTML/CSS",
-          "id": 3,
-          "pontuacao": 4
-        },
-        {
-          "titulo": "Java",
-          "id": 4,
-          "pontuacao": 4
-        }
-      ]
-    },
-    {
-      "id": "danielresende",
-      "nome": "Daniel Victor Lima Resende",
-      "email": "dvictoresende@gmail.com",
-      "telefone": "71 986158306",
-      "urlProfile": "",
-      "bio": "Olá, Meu nome é Daniel e meu objetivo é ser programador Java Full Stack",
-      "redeSocial": [
-        {
-          "nome": "github",
-          "url": "http://www.github.com/DanielVict0r",
-          "iconeUrl": "http://www.github.com/github.ico"
-        }
-      ],
-      "experiencia": [
-        {
-          "cargo": "Estagiario",
-          "empresa": "Adn Tecnologia ",
-          "periodo": "03/04/2024 a 05/04/2024",
-          "atividades": " Programação Web Básica"
-        }
-      ],
-      "escolaridade": [
-        {
-          "entidade": "Uniasselvi",
-          "curso": "Ánalise e Desenvolvimento de Sistemas",
-          "periodo": "02/2022 a 12/2024 (Em andamento)",
-          "atividades": " Modelagem de sistemas, Programação Web e Programação Orientada a Objetos "
-        },
-        {
-          "entidade": "Cimatec",
-          "curso": "Técnico em Desenvolvimento de Sistemas",
-          "periodo": "06/2020 a 12/2021",
-          "atividades": "Modelagem de sistemas, Programação Web e Programação Orientada a Objeto"
-        }
-      ],
-      "habilidades": [
-        {
-          "titulo": "php",
-          "id": 1,
-          "pontuacao": 5
-        },
-        {
-          "titulo": "java",
-          "id": 2,
-          "pontuacao": 8
-        },
-        {
-          "titulo": "html",
-          "id": "3",
-          "pontuacao": 7
-        },
-        {
-          "titulo": "css",
-          "id": "4",
-          "pontuacao": 7
-        },
-        {
-          "titulo": "javascript",
-          "id": "5",
-          "pontuacao": 6
-        },
-        {
-          "titulo": "sql",
-          "id": "6",
-          "pontuacao": 7
-        }
-      ]
-    },
-    {
-      "id": "thiagoazevedo",
-      "nome": "Thiago Silvany de Azevedo",
-      "email": "thiagosilvany00@gmail.com",
-      "telefone": "71 99175-0118",
-      "urlProfile": "",
-      "bio": "Sou atualmente um programador em início de carreira, buscando desenvolver habilidades em front-end, back-end e banco de dados. Atualmente estou cursando o 3º semestre do curso de Análise e Desenvolvimento de Sistemas na UNIFACS e também estou estagiando na área de desenvolvimento na ADN Tecnologia.",
-      "redeSocial": [
-        {
-          "nome": "github",
-          "url": "https://github.com/ThiagoAzeva",
-          "iconeUrl": "http://www.github.com/github.ico"
-        }
-      ],
-      "experiencia": [
-        {
-          "cargo": "Estagiario",
-          "empresa": "Adn Tecnologia ",
-          "periodo": "3/2024 a ",
-          "atividades": "Auxilio na area de desenvolvimento "
-        },
-        {
-          "cargo": "Programador",
-          "empresa": "Adn Tecnologia ",
-          "periodo": "01/2001 a 12/2001",
-          "atividades": "nonononono "
-        }
-      ],
-      "escolaridade": [
-        {
-          "entidade": "Unifacs",
-          "curso": "Analise e desenvolvimento de sistemas",
-          "periodo": "01/2023 a 06/2025"
-        }
-      ],
-      "habilidades": [
-        {
-          "titulo": "C#",
-          "id": 1,
-          "pontuacao": 6
-        },
-        {
-          "titulo": "netcore",
-          "id": 2,
-          "pontuacao": 5
-        },
-        {
-          "titulo": "java",
-          "id": 1,
-          "pontuacao": 6
-        },
-        {
-          "titulo": "SQL",
-          "id": 1,
-          "pontuacao": 4
-        },
-        {
-          "titulo": "html",
-          "id": 1,
-          "pontuacao": 3
         }
       ]
     }
